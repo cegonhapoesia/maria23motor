@@ -1,0 +1,334 @@
+CSS total animaçoes
+ 🌟 ANIMAÇÃO 1 — IMAGEM CORRENDO NA FAIXA (LEFT → RIGHT)
+
+<div class="anim1-container">
+
+    <div class="verso">Deus é Pai, luz que nunca se apaga.</div>
+
+    <div class="sub">Que o amor d’Ele te proteja e guie todos os dias.</div>
+
+
+
+    <div class="faixa">
+
+        <img class="img-corre" 
+
+             src="https://i.pinimg.com/736x/8a/ec/28/8aec283387de5a40a023ab3ab5fecdd9.jpg" 
+
+             width="220">
+
+    </div>
+
+</div>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<css
+.anim1-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.verso {
+    font-size: 24px;
+    color: #4b0082;
+    margin-bottom: 30px;
+}
+
+.sub {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.faixa {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ffe4f2, #e0f2ff);
+    border: 2px solid #c28bff;
+}
+
+.img-corre {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: correr 12s linear infinite;
+}
+
+@keyframes correr {
+    0% { left: -250px; }
+    100% { left: 100%; }
+}
+<<<<<<<###########################################>
+🌟 ANIMAÇÃO 2 — TEXTO MARQUEE (DIREITA→ESQUERDA e ESQUERDA→DIREITA)
+
+<div class="anim2-container">
+    <h1 class="marquee-right-left">
+        Deus é pai Maria sagrada mae e Jesus profeta da cruz
+    </h1>
+
+    <h1 class="marquee-left-right">
+        Deus é pai Maria sagrada mae e Jesus profeta da cruz
+    </h1>
+</div>
+
+.anim2-container {
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.anim2-container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.marquee-right-left {
+    color: green;
+    top: 40%;
+    animation: rightToLeft 10s linear infinite;
+}
+
+.marquee-left-right {
+    color: blue;
+    top: 60%;
+    animation: leftToRight 10s linear infinite;
+}
+
+@keyframes rightToLeft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes leftToRight {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+<<<<<<<###########################################>
+🌟 ANIMAÇÃO 3 — IMAGEM A TREMER (SHAKE)
+<div class="anim3-container">
+    <h2>No silêncio da alma nasce a luz,<br> onde o amor desperta e a sombra se reduz.</h2>
+
+    <img class="shake" 
+         src="https://images.unsplash.com/photo-1633174560386-a790ea12543b?q=80&w=687&auto=format&fit=crop" 
+         width="250">
+</div>
+
+.anim3-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.anim3-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #7fffd4;
+}
+
+.shake {
+    width: 250px;
+    animation: tremor 0.25s infinite;
+}
+
+@keyframes tremor {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% { transform: translate(-1px, -2px) rotate(-1deg); }
+    40% { transform: translate(-3px, 0px) rotate(1deg); }
+    60% { transform: translate(3px, 2px) rotate(0deg); }
+    80% { transform: translate(1px, -1px) rotate(1deg); }
+    100% { transform: translate(-1px, 2px) rotate(-1deg); }
+}
+
+<<<<<<<###########################################>
+🌟 ANIMAÇÃO 4 — TEXTO COM AURA BRILHANTE PULSANTE
+
+<div class="anim4-container">
+    <h2 class="glow-text">
+        A luz divina envolve quem caminha com fé.
+    </h2>
+</div>
+
+.anim4-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.glow-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 12px;
+    background: #6a00ff;
+    box-shadow: 0 0 20px rgba(140, 0, 255, 0.6);
+    animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 15px rgba(140, 0, 255, 0.6),
+                    0 0 30px rgba(140, 0, 255, 0.4);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(140, 0, 255, 0.9),
+                    0 0 50px rgba(140, 0, 255, 0.7);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(140, 0, 255, 0.6),
+                    0 0 30px rgba(140, 0, 255, 0.4);
+        transform: scale(1);
+    }
+}
+
+<<<<<<<###########################################>
+❤️ ANIMAÇÃO 5 — Corações subindo (efeito flutuar)
+
+<div class="anim5-container">
+    <div class="floating-hearts">
+        <span>❤️</span>
+        <span>💜</span>
+        <span>💖</span>
+        <span>💗</span>
+        <span>💞</span>
+    </div>
+
+    <h2 class="anim5-text">
+        O amor de Deus sobe como luz no coração.
+    </h2>
+</div>
+
+.anim5-container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    height: 200px;
+}
+
+.anim5-text {
+    font-size: 1.8rem;
+    color: #ff1493;
+    margin-top: 20px;
+}
+
+.floating-hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.floating-hearts span {
+    position: absolute;
+    bottom: -20px;
+    font-size: 30px;
+    animation: subir 6s linear infinite;
+    opacity: 0.8;
+}
+
+.floating-hearts span:nth-child(1) { left: 10%; animation-duration: 5s; }
+.floating-hearts span:nth-child(2) { left: 30%; animation-duration: 6s; }
+.floating-hearts span:nth-child(3) { left: 50%; animation-duration: 7s; }
+.floating-hearts span:nth-child(4) { left: 70%; animation-duration: 5.5s; }
+.floating-hearts span:nth-child(5) { left: 85%; animation-duration: 6.5s; }
+
+@keyframes subir {
+    0% { transform: translateY(0) scale(1); opacity: 0.8; }
+    100% { transform: translateY(-250px) scale(1.5); opacity: 0; }
+}
+
+<<<<<<<###########################################>
+ANIMAÇÃO 6 — Texto digitando (efeito máquina de escrever)
+<div class="anim6-container">
+    <h2 class="typewriter">
+        A fé escreve no silêncio aquilo que o coração entende.
+    </h2>
+</div>
+
+.anim6-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.typewriter {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #333;
+    border-right: 3px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 5s steps(50) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: #333; }
+    100% { border-color: transparent; }
+}
+
+
+<<<<<<<###########################################>
+⭐ SLIDE 4 IMAGENS — HTML + CSS (automático e infinito)
+<div class="slider">
+    <div class="slides">
+        <img src="https://picsum.photos/id/1015/800/400">
+        <img src="https://picsum.photos/id/1025/800/400">
+        <img src="https://picsum.photos/id/1035/800/400">
+        <img src="https://picsum.photos/id/1045/800/400">
+    </div>
+</div>
+
+.slider {
+    width: 800px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.slides {
+    display: flex;
+    width: 400%; /* 4 imagens */
+    animation: slide 16s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(0); }
+
+    25%  { transform: translateX(-100%); }
+    45%  { transform: translateX(-100%); }
+
+    50%  { transform: translateX(-200%); }
+    70%  { transform: translateX(-200%); }
+
+    75%  { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
+}
+
+
+<<<<<<<###########################################>
